@@ -1,4 +1,4 @@
-# Webpack Vue3 template
+# Vue3 Webpack Template
 
 ## Features
 1. Vue3 single file component supported.

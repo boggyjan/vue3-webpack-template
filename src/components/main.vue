@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <article>
-      <h1>Webpack Vue3 Template</h1>
+      <h1>Vue3 Webpack Template</h1>
       <h2>Includes</h2>
       <ol>
         <li>Vue3 single file component supported.</li>
