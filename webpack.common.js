@@ -62,7 +62,6 @@ export default {
     }),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Vue3 Webpack Template',
       template: './src/app.html',
       filename: './index.html',
       inject: true, // 預設為 true
