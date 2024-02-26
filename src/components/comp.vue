@@ -1,30 +1,37 @@
 <template>
   <div class="comp">
-    {{ model * 10 }}:
+    <h3>Nested Component</h3>
 
-    <button
-      type="button"
-      @click="add()"
-    >
-      compData++
-    </button>
+    v-model * 10: <span>{{ result }}</span>
+
+    <div class="actions">
+      <button
+        type="button"
+        @click="add()"
+      >
+        model.value++
+      </button>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, defineModel } from 'vue'
+import { computed, defineModel } from 'vue'
 // const props = defineProps(['value'])
 const model = defineModel()
 
 function add () {
   model.value++
 }
+
+const result = computed(() => model.value * 10)
 </script>
 
-<style lang="scss">
-.comp {
-  margin-top: 1rem;
-  padding: 1rem;
-  border: 1px solid #F00;
+<style lang="scss" scoped>
+h3 {
+  margin: 0 0 0.8rem 0;
+}
+span {
+  color: #ff0;
 }
 </style>
