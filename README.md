@@ -10,5 +10,7 @@
 - Install all dependencies ```npm i```
 - Start server:
   - development env: run ```npm run dev```
-  - production env: run ```npm start```
+  - production env:
+    - run ```npm run build``` to build your code.
+    - run ```npm start```
 - Enter http://localhost:9000 in the browser to see the result.
