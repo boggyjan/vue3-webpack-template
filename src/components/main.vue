@@ -18,10 +18,15 @@
         <li>Start server:
           <ul>
             <li>development env: run <code>npm run dev</code></li>
-            <li>production env: run <code>npm start</code></li>
+            <li>production env:
+              <ul>
+                <li>run <code>npm run build</code> to build your code.</li>
+                <li>run <code>npm start</code></li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <li>Enter <a href="http://localhost:9000" rel="nofollow">http://localhost:9000</a> in the browser to see the result.</li>
+        <li>Enter <code>http://localhost:9000</code> in the browser to see the result.</li>
       </ul>
     </article>
 

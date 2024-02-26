@@ -1,10 +1,10 @@
-# Webpack vue3 template
+# Webpack Vue3 template
 
 ## Features
 1. Vue3 single file component supported.
 2. Hot Module Replacement
 3. Express.js (for production env)
-4. sass/scss, autoprefixer
+4. css/sass/scss, scoped, autoprefixer
 
 ## Usage
 - Install all dependencies ```npm i```
