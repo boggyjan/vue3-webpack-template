@@ -1,5 +1,5 @@
-import { ref, reactive, computed, watch, createApp, onMounted } from 'vue/dist/vue.esm-bundler.js'
-import main from './components/main.vue'
+import { createApp } from 'vue'
+import main from './components/main'
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = createApp(main)

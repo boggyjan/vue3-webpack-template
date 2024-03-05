@@ -1,9 +1,9 @@
-import path from 'path'
-import webpack from 'webpack'
-import { VueLoaderPlugin } from 'vue-loader'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
+const path = require('path')
+const webpack = require('webpack')
+const { VueLoaderPlugin } = require('vue-loader')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-export default {
+module.exports = {
   mode: 'production',
 
   entry: './src/app.js',
@@ -52,6 +52,10 @@ export default {
         ]
       }
     ]
+  },
+
+  resolve: {
+    extensions: ['.vue', '.js', '.jsx', '.ts', '.tsx', '.mjs'],
   },
 
   plugins: [

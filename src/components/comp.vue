@@ -2,7 +2,7 @@
   <div class="comp">
     <h3>Nested Component</h3>
 
-    v-model * 10: <span>{{ result }}</span>
+    v-model *= 10: <span>{{ result }}</span>
 
     <div class="actions">
       <button
