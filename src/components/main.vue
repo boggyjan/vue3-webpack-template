@@ -53,7 +53,7 @@
 </template>
 
 <script setup>
-import comp from './comp'
+import comp from '~/components/comp'
 import { ref, onMounted } from 'vue'
 const count = ref(1)
 

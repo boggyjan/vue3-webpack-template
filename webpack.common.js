@@ -56,6 +56,9 @@ module.exports = {
 
   resolve: {
     extensions: ['.vue', '.js', '.jsx', '.ts', '.tsx', '.mjs'],
+    alias: {
+      '~': '/src'
+    }
   },
 
   plugins: [
