@@ -46,16 +46,17 @@
       </div>
     </div>
 
-    <div class="example-block">
+    <div class="example-block" v-if="count > 1">
+      example-block
       <comp v-model="count" />
     </div>
   </div>
 </template>
 
 <script setup>
-import comp from '~/components/comp'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, defineAsyncComponent } from 'vue'
 const count = ref(1)
+const comp = defineAsyncComponent(() => import('~/components/comp.vue'))
 
 onMounted(() => {
   console.log('onMounted')
